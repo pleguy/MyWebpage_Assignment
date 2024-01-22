@@ -1,0 +1,245 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+    }
+    
+    header {
+    position: relative;
+    background-color: #f1f1f1;
+    text-align: center;
+    overflow: hidden;
+    }
+    
+    header img {
+    width: 100%;
+    height: 300px;
+    }
+    
+    header h1 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Courier New';
+    font-size: 62px;
+    color: white;
+    }
+    
+    header h2 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Tohama';
+    font-size: 30px;
+    color: yellow;
+    }
+    
+    header img.profile-img {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 75%;
+    width: 138px; 
+    height: 125px; 
+    border: 2px solid black; 
+    z-index: 2; 
+    }				
+                
+    nav {
+    position: fixed;
+    top: 64%; 
+    transform: translateY(-50%);
+    float: left;
+    width: 9%;
+    height: 150px;
+    background-color: #f1f1f1;
+    border: 3px solid green; 
+    border-radius: 30px;
+    padding: 15px;              
+    margin-right: 0.7%;
+    margin-left:0.7%;
+    text-align: center;
+    }
+    
+    nav img {
+    float: left;
+    width: 20px; 
+    height: 20px; 
+    margin-bottom: 5px; 						 
+    }
+            
+    nav a {
+    display: block;
+    color:black;
+    font-family:'Georgia';
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-decoration: none; 
+    }
+                    
+    nav a:hover {
+    background-color: grey;
+    width: calc(100% + 3px); 
+    color: white;
+    }
+                
+    .WebPage {
+    text-align: center;
+    margin-bottom: 90px;
+    margin-top: 20px;
+    font-family: 'Arial';
+    font-size: 25px;
+    animation: blink 3s infinite; 
+    }
+            
+    @keyframes blink {
+    0%, 100% {
+    opacity: 1;
+    }
+    50% {
+    opacity: 0;
+    }
+    }
+    
+    .content {
+    margin-left: 13%;
+    border:4px dashed blue;
+    float: left;
+    width: 60%;
+    padding: 20px;
+    margin-bottom:1%;
+    }
+                    
+    .content h2 {
+    left: 45%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    }
+                    
+    .content #about {
+    background-color: rgba(236, 176, 176);
+    font-family: 'Arial';
+    font-size: 18px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1); 
+    transition: box-shadow 0.3s ease; 
+    }
+            
+    .content #about:hover {
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2); 
+    }
+            
+    .content #education {
+    background-color: rgba(182, 237, 174);
+    font-family: 'Arial';
+    font-size: 18px;
+    }
+            
+    .content #experience {
+    background-color: rgba(224, 228, 87);
+    font-family: 'Arial';
+    font-size: 18px;
+    }
+            
+    .content #skills {
+    background-color: rgba(167, 146, 202);
+    }
+            
+    .content #hobbies {
+    background-color: rgba(184, 131, 129);
+    font-family: 'Arial';
+    font-size: 18px;
+    }
+    
+    section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 27px;
+    }
+    
+    section h2 {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+    }
+            
+    .red-line {
+    margin-left: -4px;
+    border: 1px solid red;
+    margin-top: 5px; 
+    margin-bottom: 10px;
+    width: 270px;		
+    }
+            
+    .black-line {
+    width: 100%;
+    height: 1px;
+    background-color: grey;
+    margin-top: 8px; 
+    margin-bottom: 8px; 
+    }
+            
+    .right-block {
+    float: right;
+    width: 22.4%;
+    padding: 1px;
+    color: white;
+    border: 3px solid green; 
+    border-radius: 10px; 
+    }
+    
+    #quick-id {
+    font-family: 'Garamond';
+    font-size: 14px;
+    padding: 20px;
+    margin-bottom: 10px;		
+    background-color: rgb(0, 71, 150);
+    border-radius:10px;		      		 
+    }
+            
+    #contact {
+    font-family: 'Verdana';
+    font-size: 12px;
+    color: black;
+    padding: 20px;
+    margin-bottom: 0.3px;
+    background-color: rgb(173, 216, 230);
+    border-radius:10px;		        
+    }
+                    
+            
+    form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+    
+    form label {
+    width: 85%;
+    margin-bottom: 10px;
+    }
+            
+    form input {
+    width: 85%;
+    margin-bottom: 10px;
+    }
+            
+    form textarea {
+    width: 85%;
+    margin-bottom: 10px;		
+    }
+    
+    footer {
+    background-color: black;
+    color: red;
+    font-family: 'Copperplate';
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    clear: both;
+    width: 98.5%;
+    border-radius:80px; 
+    }        
